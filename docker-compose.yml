@@ -3,6 +3,7 @@ version: '2'
 services:
   influxdb:
     image: influxdb:1.2.0-alpine
+    container_name: influxdb
     ports:
       - "8083:8083"
       - "8086:8086"
