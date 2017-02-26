@@ -26,4 +26,4 @@ services:
       - grafana
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - /etc/letsencrypt/live/iot.it-lab.ch:/etc/letsencrypt/live/iot.it-lab.ch
+      - /etc/letsencrypt:/etc/letsencrypt
