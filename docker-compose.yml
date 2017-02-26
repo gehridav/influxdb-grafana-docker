@@ -10,6 +10,7 @@ services:
     volumes:
       - /var/lib/influxdb
       - ./influxdb.conf:/etc/influxdb/influxdb.conf
+      - /etc/letsencrypt:/etc/letsencrypt
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
