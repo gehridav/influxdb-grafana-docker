@@ -18,6 +18,8 @@ services:
       - "3000:3000"
     links:
       - influxdb
+    volumes:
+      - ./grafana.ini:/etc/grafana/grafana.ini
   nginx:
     image: nginx:alpine
     container_name: nginx
